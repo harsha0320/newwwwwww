@@ -18,8 +18,8 @@ pipeline {
     }
     stage('Upload to S3') {
       steps {
-        sh 'ls -lrt /target/'
-        sh 'aws s3 cp target/demo-app-1.0.0.jar s3://jenkinsbucket0011/'
+        sh 'ls -lrt target'
+        # sh 'aws s3 cp target/demo-app-1.0.0.jar s3://jenkinsbucket0011/'
       }
     }
   }
